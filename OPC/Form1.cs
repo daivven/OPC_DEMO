@@ -31,19 +31,14 @@ namespace OPC
             OpcSvr.Connect("KEPware.KEPServerEx.V6", "127.0.0.1");//设置要连接OPC的版本和IP
             OpcIn = OpcSvr.OPCGroups.Add("OPCIN");//设置监控的OPCGroup
 
-            OpcIn.OPCItems.AddItem("TEST.Device1.A01#_String", 1);//TEST.Device1.A01#_String  这个是KEPserver 里面添加的点   1 是 给这个监控点设置一个唯一的ID，
-            OpcIn.OPCItems.AddItem("TEST.Device1.A02#_String", 2);
-            OpcIn.OPCItems.AddItem("TEST.Device1.A03#_String", 3);
-            OpcIn.OPCItems.AddItem("TEST.Device1.A04#_String", 4);
-
-            OpcIn.OPCItems.AddItem("TEST.Device1.Pulsating1", 5);
-            OpcIn.OPCItems.AddItem("TEST.Device1.Pulsating2", 6);
-            OpcIn.OPCItems.AddItem("TEST.Device1.Pulsating3", 7);
-            OpcIn.OPCItems.AddItem("TEST.Device1.Pulsating4", 8);
-            OpcIn.OPCItems.AddItem("TEST.Device1.Pulsating5", 9);
-            OpcIn.OPCItems.AddItem("TEST.Device1.TEST_1", 10);
-            OpcIn.OPCItems.AddItem("TEST.Device1.TEST_2", 11);
-   
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig1", 1);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig2", 2);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig3", 3);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig4", 4);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig5", 5);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig6", 6);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig7", 7);
+            OpcIn.OPCItems.AddItem("1#BOF.PLC1ALLOY.Alloy_Weig8", 8);
 
             OpcIn.IsActive = true;//这个是标配
             OpcIn.IsSubscribed = true;//这个是标配
